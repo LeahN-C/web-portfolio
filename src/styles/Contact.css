@@ -1,0 +1,97 @@
+/* ----------------- CONTACT SECTION ----------------- */
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid orange;
+  border-radius: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* The Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Label And Text Of Each Field */
+.label-and-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* All Of The Boxes */
+.box {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+/* Just The Button For The Form */
+.form-button {
+  display: flex;
+  align-self: center;
+  margin-top: 1rem;
+  width: 30%;
+}
+
+/* Boxes When Form Is Invalid */
+/* .form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border: 0px solid orange;
+  color: orange;
+  border-top-color: orange;
+  border-right-color: orange;
+  border-bottom-color: orange;
+  border-left-color: orange;
+  background-image: none;
+  color: orange;
+} */
+
+/* For Screens Over 2200px */
+@media (min-width: 2200px) {
+  .form {
+    width: 60%;
+  }
+}
+
+/* For Screens Over 1800px */
+@media (min-width: 1800px) {
+  .form {
+    width: 80%;
+  }
+}
+
+/* For Screens Under 1800px */
+@media (max-width: 1800px) {
+  .form {
+    width: 100%;
+  }
+}
+
+/* For Screens Under 900 */
+@media (max-width: 900px) {
+  .form-button {
+    width: 50%;
+  }
+}
+
+/* For Screens Under 750px */
+@media (max-width: 750px) {
+  .form-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

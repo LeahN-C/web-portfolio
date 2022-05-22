@@ -1,0 +1,46 @@
+/* ----------------- SOCIALS SECTION ----------------- */
+
+/* The Whole Socials Section */
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Top Left Logo */
+.myLogo {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Social Media Icons */
+.icon {
+  width: 3rem;
+  margin-left: 4rem;
+}
+
+/* Hover For Logos */
+.icon:hover {
+  filter: invert(100%) sepia(1%) saturate(389%) hue-rotate(159deg)
+    brightness(119%) contrast(100%);
+}
+
+/* For Screens Under 900px */
+@media (max-width: 900px) {
+  .icon {
+    margin: 1rem;
+  }
+}
+
+/* For Screens Under 700px */
+@media (max-width: 700px) {
+  .myLogo {
+    width: 4.5rem;
+    height: auto;
+  }
+  .icon {
+    width: 2rem;
+  }
+}

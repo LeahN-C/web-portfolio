@@ -1,0 +1,28 @@
+/* ----------------- ENTIRE PAGE ----------------- */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* For Screens Under 1400px */
+@media (max-width: 1400px) {
+  .App {
+    padding: 4rem;
+  }
+}
+
+/* For Screens Under 700px */
+@media (max-width: 700px) {
+  .App {
+    padding: 2rem;
+  }
+}

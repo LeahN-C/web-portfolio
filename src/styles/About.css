@@ -1,0 +1,147 @@
+/* ----------------- ABOUT SECTION ----------------- */
+
+/* Whole About Me Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+/* The Text In About Me Section */
+.about-text {
+  font-size: 1.25rem;
+}
+
+/* 'My Story' And 'My Hobbies' */
+.about-me {
+  width: 100%;
+}
+
+/* Toggle With Writing */
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* The Actual Toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+/* The Checkmark Behind The Toggle */
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+/* Oval When Ball's On The Left */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #282c34;
+  transition: 0.4s;
+  border-radius: 1rem;
+  box-shadow: -1px 1px 6px 0px rgb(0 0 0 / 68%);
+  border: 1px solid rgb(121, 80, 4);
+}
+
+/* Ball On The Left */
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: orange;
+  left: 0.4rem;
+  bottom: 0.3rem;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.42, 0, 0, 1.68);
+}
+
+/* Oval When Ball's On The Right */
+input:checked + .slider {
+  background-color: orange;
+}
+
+/* Ball On The Right */
+input:checked + .slider:before {
+  transform: translateX(30px);
+  background: rgb(255, 255, 255);
+}
+
+/* All Photos Together */
+.photos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Individual Photos */
+.one-photo {
+  width: 15rem;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Upright Ed Certification Photo */
+.cert-photo {
+  width: 22rem;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* For Screens Under 900px */
+@media (max-width: 900px) {
+  .cert-photo {
+    width: 18rem;
+  }
+}
+
+/* For Screens Under 850px */
+@media (max-width: 850px) {
+  .one-photo {
+    width: 10rem;
+  }
+}
+
+/* For Screens Under 700px */
+@media (max-width:700px) {
+  .about-text {
+    font-size: 1rem;
+  }
+  .switch {
+    width: 4.5rem;
+  }
+  input:checked + .slider:before {
+    transform: translateX(10px);
+  }
+}
+
+/* For Screens Under 500px */
+@media (max-width: 500px) {
+  .cert-photo {
+    width: 12rem;
+  }
+}
+
+/* For Screens Under 500px */
+@media (max-width: 500px) {
+  .one-photo {
+    width: 8rem;
+  }
+}
