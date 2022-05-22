@@ -39,3 +39,10 @@
         width: 100%;
     };
 }
+
+/* For Screens Under 950px */
+@media (max-width: 950px) {
+    .resume {
+        width: 100%;
+    };
+}
