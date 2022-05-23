@@ -15,6 +15,20 @@
   height: 5rem;
 }
 
+/* The Three Links At Top Right */
+.all-links {
+  display: flex;
+  align-items: center;
+}
+
+/* The Resume Button */
+.resume-button a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
 /* Social Media Icons */
 .icon {
   width: 3rem;
@@ -23,8 +37,7 @@
 
 /* Hover For Logos */
 .icon:hover {
-  filter: invert(100%) sepia(1%) saturate(389%) hue-rotate(159deg)
-    brightness(119%) contrast(100%);
+  filter: invert(100%);
 }
 
 /* For Screens Under 900px */

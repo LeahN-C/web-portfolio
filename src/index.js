@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Resume from "./components/Resume";
 import ThankYou from "./components/ThankYou";
 import reportWebVitals from "./reportWebVitals";
 
@@ -13,6 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<App />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>
