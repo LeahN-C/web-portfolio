@@ -59,7 +59,7 @@ function Contact() {
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
+            <input type="hidden" name="_next" value="http://leahnc.com/thank-you"></input>
             <input type="hidden" name="_template" value="box"></input>
             {/* Required fields text */}
             <p>Required fields are marked with an asterisk (*)</p>
