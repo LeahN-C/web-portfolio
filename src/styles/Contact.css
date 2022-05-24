@@ -62,21 +62,23 @@
 
 /* For Screens Over 2200px */
 @media (min-width: 2200px) {
-  .form {
+  .form-container {
     width: 60%;
+    align-self: center;
   }
 }
 
 /* For Screens Over 1800px */
 @media (min-width: 1800px) {
-  .form {
+  .form-container {
     width: 80%;
+    align-self: center;
   }
 }
 
 /* For Screens Under 1800px */
 @media (max-width: 1800px) {
-  .form {
+  .form-container {
     width: 100%;
   }
 }

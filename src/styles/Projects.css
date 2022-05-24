@@ -99,6 +99,22 @@ a.button.card-link {
   border-color: #282c34;
 }
 
+/* For Screens Over 2200px */
+@media (min-width: 2200px) {
+  .cards {
+    width: 60%;
+    align-self: center;
+  }
+}
+
+/* For Screens Over 1800px */
+@media (min-width: 1800px) {
+  .cards {
+    width: 80%;
+    align-self: center;
+  }
+}
+
 /* For Screens Under 1000px */
 @media (max-width: 1000px) {
   .cards {
