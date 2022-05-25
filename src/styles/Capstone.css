@@ -11,6 +11,7 @@
 /* Video Of Presentation */
 .presentation {
     border-radius: 0.5rem;
+    max-width: 100%;
 }
 
 /* For Screens Over 2200px */
