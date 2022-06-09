@@ -10,7 +10,7 @@ import "./styles/App.css";
 
 function App() {
   // Tab title
-  document.title = "Leah's Portfolio";
+  document.title = "Leah Niemasz-Cavanagh";
 
   return (
     <div className="App">
